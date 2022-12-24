@@ -1,0 +1,24 @@
+{
+  "name": "play-one",
+  "version": "0.3.0",
+  "description": "play one",
+  "engines": {
+    "node": "15.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "client": "npm start --prefix client",
+    "build:client": "npm run --prefix client build && rm -rf ./public && mv ./client/build/ public/"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
